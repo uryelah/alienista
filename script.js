@@ -1484,8 +1484,8 @@ Lembre-se: perguntar já é o primeiro passo para o equilíbrio!
     type: "video",
     videoUrl: "./videos/baroes.mp4",
     content: "ＢＡＲÕＥＳ　ＤＡ　ＰＩＳＡＤＩＮＨＡ　－　ＮＵＮＣＡ　ＶＡＩ　ＳＥＲ　ＥＵ　[ｌｏｆｉ　ｒｅｍｉｘ]",
-    date: "2025-03-14",
-    time: "09:00",
+    date: "2025-03-31",
+    time: "09:40",
     reactions: { "🕺": 190 }
   },
   {
