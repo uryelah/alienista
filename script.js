@@ -2744,6 +2744,9 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ========== TOQUE NA TELA PARA AVANÇAR MENSAGENS (MOBILE + DESKTOP) ==========
+let touchHandled = false;
+const phoneElement = document.querySelector('.phone');
+
 function isInteractiveElement(target) {
   return target.closest('.read-more') ||
          target.closest('.play-btn') ||
@@ -2751,15 +2754,37 @@ function isInteractiveElement(target) {
          target.closest('.video-preview') ||
          target.closest('.pdf-attach') ||
          target.closest('.image-viewer-overlay') ||
-         target.closest('button');
+         target.closest('button') ||
+         target.closest('video') ||          // controles de vídeo
+         target.closest('input') ||
+         target.closest('textarea');
 }
 
 function handleChatTap(e) {
-  // Ignora toques em elementos interativos (Ler mais, áudio, imagens, etc.)
   if (isInteractiveElement(e.target)) return;
+  if (!container[activeChat]) return;       // safety check
   showNextMessage();
 }
 
-// Adiciona listener para toque (mobile) e clique (desktop) no painel principal
-document.addEventListener('touchstart', handleChatTap, { passive: true });
-document.addEventListener('click', handleChatTap);
+if (phoneElement) {
+  phoneElement.addEventListener('touchend', (e) => {
+    // Em touch, marca e executa apenas se não foi consumido
+    if (touchHandled) {
+      touchHandled = false;
+      return;
+    }
+    touchHandled = true;
+    handleChatTap(e);
+    // Impede o click subsequente (que virá ~300ms depois) de atuar novamente
+    e.preventDefault(); // cancela o click sintético
+  });
+
+  phoneElement.addEventListener('click', (e) => {
+    // Se o touch já tratou, ignora o click
+    if (touchHandled) {
+      touchHandled = false;
+      return;
+    }
+    handleChatTap(e);
+  });
+}
