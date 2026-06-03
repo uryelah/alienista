@@ -1592,7 +1592,79 @@ Lembre-se: perguntar já é o primeiro passo para o equilíbrio!
     isSelf: false,
     avatarUrl: "\n\n",
     type: "notification",
-    content: "Arte dos personagens por Pedro Henrique Martins Silva",
+    content: "Enzo Marquezin de Andrade",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: ".",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: "Maria Clara Brandt Salomão",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: ".",
+    members_number: 0,
+    reactions: {}
+  },
+     {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: "Sarah Uryelah Silva Chamorro",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: ".",
+    members_number: 0,
+    reactions: {}
+  },
+     {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: "Thomas Anwar Vasconcellos Serri",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: ".",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: "E arte dos personagens por Pedro Henrique Martins Silva",
     members_number: 0,
     reactions: {}
   },
@@ -1719,6 +1791,15 @@ Lembre-se: perguntar já é o primeiro passo para o equilíbrio!
     avatarUrl: "",
     type: "text",
     content: "(É o que vai ter de crédito hj, muita gente ajudou mas não durmo faz 24h para terminar de codar isso, todo mundo fez bastante coisa e teve participações especiais, pergutem para turma que adiciono o resto depois 🫠)",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "???",
+    isSelf: false,
+    avatarUrl: "",
+    type: "text",
+    content: "Bet meus pequenos pogchamps",
     members_number: 0,
     reactions: {}
   },
