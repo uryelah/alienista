@@ -2745,7 +2745,8 @@ document.addEventListener('keydown', (e) => {
 
 // ========== TOQUE NA TELA PARA AVANÇAR MENSAGENS (MOBILE + DESKTOP) ==========
 let touchHandled = false;
-const phoneElements = document.querySelector('.phone');
+const phoneElement = document.querySelector('#public');
+const privatePhoneElement = document.querySelector('#private');
 
 function isInteractiveElement(target) {
   return target.closest('.read-more') ||
@@ -2766,27 +2767,48 @@ function handleChatTap(e) {
   showNextMessage();
 }
 
-if (phoneElements.length) {
-  phoneElements.forEach(phoneElement => {
-    phoneElement.addEventListener('touchend', (e) => {
-      // Em touch, marca e executa apenas se não foi consumido
-      if (touchHandled) {
-        touchHandled = false;
-        return;
-      }
-      touchHandled = true;
-      handleChatTap(e);
-      // Impede o click subsequente (que virá ~300ms depois) de atuar novamente
-      e.preventDefault(); // cancela o click sintético
-    });
+if (phoneElement) {
+  phoneElement.addEventListener('touchend', (e) => {
+    // Em touch, marca e executa apenas se não foi consumido
+    if (touchHandled) {
+      touchHandled = false;
+      return;
+    }
+    touchHandled = true;
+    handleChatTap(e);
+    // Impede o click subsequente (que virá ~300ms depois) de atuar novamente
+    e.preventDefault(); // cancela o click sintético
+  });
 
-    phoneElement.addEventListener('click', (e) => {
-      // Se o touch já tratou, ignora o click
-      if (touchHandled) {
-        touchHandled = false;
-        return;
-      }
-      handleChatTap(e);
-    });
-  })
+  phoneElement.addEventListener('click', (e) => {
+    // Se o touch já tratou, ignora o click
+    if (touchHandled) {
+      touchHandled = false;
+      return;
+    }
+    handleChatTap(e);
+  });
+}
+
+if (privatePhoneElement) {
+  privatePhoneElement.addEventListener('touchend', (e) => {
+    // Em touch, marca e executa apenas se não foi consumido
+    if (touchHandled) {
+      touchHandled = false;
+      return;
+    }
+    touchHandled = true;
+    handleChatTap(e);
+    // Impede o click subsequente (que virá ~300ms depois) de atuar novamente
+    e.preventDefault(); // cancela o click sintético
+  });
+
+  privatePhoneElement.addEventListener('click', (e) => {
+    // Se o touch já tratou, ignora o click
+    if (touchHandled) {
+      touchHandled = false;
+      return;
+    }
+    handleChatTap(e);
+  });
 }
