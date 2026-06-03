@@ -1,6 +1,7 @@
 let membersNumber = 199;
 // ========== ARRAY DE MENSAGENS ==========
-const messages = [
+const messages = {
+  "main": [
   // Capítulo 1 – A chegada do consultor
   {
     senderName: "Sistema",
@@ -411,6 +412,27 @@ const messages = [
     reactions: { "😂": 48, "😬": 12 }
   },
   {
+    senderName: "Galvão",
+    isSelf: false,
+    avatarUrl: "https://i.imgur.com/20NWOdO.jpeg",
+    type: "video",
+    videoUrl: "./videos/baroes.mp4",
+    content: "ＢＡＲÕＥＳ　ＤＡ　ＰＩＳＡＤＩＮＨＡ　－　ＮＵＮＣＡ　ＶＡＩ　ＳＥＲ　ＥＵ　[ｌｏｆｉ　ｒｅｍｉｘ]",
+    date: "2025-03-14",
+    time: "09:00",
+    reactions: { "👍": 10 }
+  },
+  {
+    senderName: "Galvão",
+    isSelf: false,
+    avatarUrl: "https://i.imgur.com/20NWOdO.jpeg",
+    type: "text",
+    content: "Oh pessoal, foi mal grupo errado. Não sei apagar agora.",
+    date: "2025-03-14",
+    time: "09:00",
+    reactions: { "👍": 1 }
+  },
+  {
     senderName: "Matheus",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/XaB1v1K.jpeg",
@@ -496,6 +518,19 @@ const messages = [
     },
     reactions: { "😂": 34, "😬": 22 },
     caption: "QUANDO VOCÊ NÃO SABE SE RIR DE UMA PIADA VAI TE DAR IER BAIXO POR 'ANSIEDADE' OU ALTO POR 'LEVEZA'"
+  },
+  {
+    type: "fork",
+    from: {
+      group: "public"
+    },
+    to: {
+      group: "private",
+      messages: "Pina e Crispim",
+      members: 2,
+      title: "Pina e Crispim",
+      nextMessageIndex: 0
+    }
   },
   {
     senderName: "Galvão",
@@ -626,7 +661,6 @@ Dr. Simon Bacamarte
     time: "14:00",
     reactions: { "😶": 67, "😢": 34 }
   },
-  // Capítulo 4 – O olho que tudo vê (câmeras integradas)
   {
     senderName: "Sistema",
     isSelf: false,
@@ -634,9 +668,22 @@ Dr. Simon Bacamarte
     type: "notification",
     content: "Simon Bacamarte removeu Chico das Cambraias",
     members_number: -1,
-    date: "2025-03-21",
-    time: "08:30",
+    date: "2025-03-15",
+    time: "17:20",
     reactions: {}
+  },
+  // Capítulo 4 – O olho que tudo vê (câmeras integradas)
+  {
+    senderName: "André Mendonça",
+    isSelf: false,
+    avatarUrl: "",
+    type: "audio",
+    audioUrl: "./audios/portaria.opus",
+    content: "Tem aqui umas coisas na portaria, o pessoal de TI pode vir pegar?.",
+    date: "2025-03-20",
+    time: "08:05",
+    duration: "0:32",
+    reactions: { "🙏": 2, "👀": 1 }
   },
   {
     senderName: "Simon Bacamarte",
@@ -750,13 +797,38 @@ Dr. Simon Bacamarte
     time: "14:00",
     reactions: { "😢": 89, "😡": 45, "💔": 12 }
   },
+    {
+    type: "fork",
+    from: {
+      group: "public"
+    },
+    to: {
+      group: "private",
+      messages: "Porfirio e diretoria",
+      members: 5,
+      title: "Diretoria - negociações",
+      nextMessageIndex: 0
+    }
+  }, 
+  {
+    senderName: "porfírio",
+    isSelf: false,
+    avatarUrl: "https://i.imgur.com/7JN9vWS.jpeg",
+    type: "audio",
+    audioUrl: "./audios/porfirio_2.mp3",
+    content: "Pessoal, esta situação é inadimissível, convoco uma assembléia amanhã 10h...",
+    date: "2025-03-21",
+    time: "17:20",
+    duration: "1:00",
+    reactions: { "💪": 67, "😏": 4, "🐍": 2 }
+  },
   // Capítulo 5 – A revolta dos logs (grupo principal)
   {
     senderName: "Joana Pina",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
     type: "image",
-    content: "./images/print.png",
+    content: "./images/flagra.png",
     date: "2025-03-22",
     time: "08:10",
     reactions: { "😡": 192, "😂": 45, "😢": 23 },
@@ -837,6 +909,19 @@ Dr. Simon Bacamarte
     time: "08:45",
     reactions: { "😭": 78, "🚀": 45, "🤣": 12 }
   },
+  {
+    type: "fork",
+    from: {
+      group: "public"
+    },
+    to: {
+      group: "private",
+      messages: "Bacamarte e Evarista",
+      members: 2,
+      title: "Benzinho e Evarista 💎",
+      nextMessageIndex: 0
+    }
+  },  
   // Capítulo 6 – O twist: S.A.N.O. 2.0
   {
     senderName: "Simon Bacamarte",
@@ -1149,6 +1234,19 @@ Lembre-se: você é o protagonista da sua própria normalidade. Vamos juntos nes
     reactions: {}
   },
   {
+    type: "fork",
+    from: {
+      group: "public"
+    },
+    to: {
+      group: "private",
+      messages: "Pina e Crispim",
+      members: 2,
+      title: "Pina e Crispim",
+      nextMessageIndex: 4
+    }
+  },
+  {
     senderName: "S.A.N.O. Bot 2.0",
     isSelf: true,
     avatarUrl: "https://i.imgur.com/T33maIs_d.webp?maxwidth=760&fidelity=grand",
@@ -1256,7 +1354,31 @@ Lembre-se: perguntar já é o primeiro passo para o equilíbrio!
     time: "14:31",
     reactions: {}
   },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "notification",
+    content: "Joana Pina adicionou Estagiário",
+    date: "2025-03-30",
+    time: "15:00",
+    members_number: 1,
+    reactions: { "🙌": 2 }
+  },
   // Capítulo 9 – O desligamento
+  {
+    type: "fork",
+    from: {
+      group: "public"
+    },
+    to: {
+      group: "private",
+      messages: "Estagiário e Supervisor",
+      members: 2,
+      title: "Estagiário e Supervisor de TI",
+      nextMessageIndex: 0
+    }
+  },
   {
     senderName: "Joana Pina",
     isSelf: false,
@@ -1299,7 +1421,18 @@ Lembre-se: perguntar já é o primeiro passo para o equilíbrio!
     members_number: 1,
     date: "2025-03-31",
     time: "09:00",
-    reactions: {}
+    reactions: { "🎉": 195, "🔥": 2 }
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "notification",
+    content: "Padre Lopes removeu S.A.N.O. Bot 2.0",
+    members_number: -1,
+    date: "2025-03-31",
+    time: "09:01",
+    reactions: {  "🤖": 10 }
   },
   {
     senderName: "Martin Britto",
@@ -1343,11 +1476,603 @@ Lembre-se: perguntar já é o primeiro passo para o equilíbrio!
     date: "2025-03-31",
     time: "09:35",
     reactions: { "😂": 34, "F": 12 }
-  }
-];
+  },
+  {
+    senderName: "Galvão",
+    isSelf: false,
+    avatarUrl: "https://i.imgur.com/20NWOdO.jpeg",
+    type: "video",
+    videoUrl: "./videos/baroes.mp4",
+    content: "ＢＡＲÕＥＳ　ＤＡ　ＰＩＳＡＤＩＮＨＡ　－　ＮＵＮＣＡ　ＶＡＩ　ＳＥＲ　ＥＵ　[ｌｏｆｉ　ｒｅｍｉｘ]",
+    date: "2025-03-14",
+    time: "09:00",
+    reactions: { "🕺": 190 }
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "notification",
+    content: "Fim do chat",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: ".",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: ".",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: ".",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: ".",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: ".",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: ".",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: ".",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: ".",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: ".",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: "Créditos",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "\n\n",
+    type: "notification",
+    content: "Arte dos personagens por Pedro Henrique Martins Silva",
+    members_number: 0,
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "image",
+    content: "https://i.imgur.com/T33maIs_d.webp?maxwidth=760&fidelity=grand",
+    reactions: { },
+    caption: ""
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "image",
+    content: "https://i.imgur.com/PYR1H3M.jpeg",
+    reactions: { },
+    caption: ""
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "image",
+    content: "https://i.imgur.com/BIHW5wD.jpeg",
+    reactions: { },
+    caption: ""
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "image",
+    content: "https://i.imgur.com/gSpkC3q.jpeg",
+    reactions: { },
+    caption: ""
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "image",
+    content: "https://i.imgur.com/mA5pRNY.jpeg",
+    reactions: { },
+    caption: ""
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "image",
+    content: "https://i.imgur.com/cZtbXwp.jpeg",
+    reactions: { },
+    caption: ""
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "image",
+    content: "https://i.imgur.com/5VEINaW.jpeg",
+    reactions: { },
+    caption: ""
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "image",
+    content: "https://i.imgur.com/sFKxMzf.jpeg",
+    reactions: { },
+    caption: ""
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "image",
+    content: "https://i.imgur.com/hGqyELB.jpeg",
+    reactions: { },
+    caption: ""
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "image",
+    content: "https://i.imgur.com/XaB1v1K.jpeg",
+    reactions: { },
+    caption: ""
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "image",
+    content: "https://i.imgur.com/20NWOdO.jpeg",
+    reactions: { },
+    caption: ""
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "image",
+    content: "https://i.imgur.com/VJbAHUJ.jpeg",
+    reactions: { },
+    caption: ""
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "image",
+    content: "https://i.imgur.com/7JN9vWS.jpeg",
+    reactions: { },
+    caption: ""
+  },
+  {
+    senderName: "Sarah",
+    isSelf: true,
+    avatarUrl: "",
+    type: "text",
+    content: "(É o que vai ter de crédito hj, muita gente ajudou mas não durmo faz 24h para terminar de codar isso, todo mundo fez bastante coisa e teve participações especiais, pergutem para turma que adiciono o resto depois 🫠)",
+    members_number: 0,
+    reactions: {}
+  },
+  ],
+  "Pina e Crispim": [
+    {
+      senderName: "Joana Pina",
+      isSelf: false,
+      avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
+      type: "text",
+      content: "Vc apagou pq? Tá com medo do robô?",
+      date: "2025-03-14",
+      time: "08:40",
+      duration: "0:32",
+    },
+    {
+      senderName: "Crispim Soares",
+      isSelf: true,
+      avatarUrl: "https://i.imgur.com/mA5pRNY.jpeg",
+      type: "audio",
+      audioUrl: "./audios/crispim_1.wav",
+      duration: "0:45",
+      content: "Pina, eu não sei mais o que pode ou não... Até o Gil foi internado por ser educado. Eu tremo toda vez que abro o grupo. Tô com medo de até digitar ‘ok’ e ser mal interpretado...",
+      date: "2025-03-14",
+      time: "08:45",
+    },
+    {
+      senderName: "Joana Pina",
+      isSelf: false,
+      avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
+      type: "text",
+      content: "Kkkkkk relaxa, o robô não morde. Ainda.",
+      date: "2025-03-14",
+      time: "08:55",
+    },
+    {
+      type: "fork",
+      from: {
+        group: "private"
+      },
+      to: {
+        group: "public",
+        messages: "main",
+        members: membersNumber,
+        title: "Itaguaí S.A. – Geral",
+        nextMessageIndex: 49
+      }
+    },
+    {
+      senderName: "Crispim Soares",
+      isSelf: true,
+      avatarUrl: "https://i.imgur.com/mA5pRNY.jpeg",
+      type: "audio",
+      audioUrl: "./audios/crispim_22.wav",
+      duration: "0:45",
+      content: "Pina, eu não sei mais o que pode ou não... Até o Gil foi internado por ser educado. Eu tremo toda vez que abro o grupo. Tô com medo de até digitar ‘ok’ e ser mal interpretado...",
+      date: "2025-03-25",
+      time: "08:10",
+    },
+    {
+      senderName: "Joana Pina",
+      isSelf: false,
+      avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
+      type: "text",
+      content: "Crispim, o senhor tem acesso à sala do servidor, né?",
+      date: "2025-03-25",
+      time: "08:13",
+    },
+    {
+      senderName: "Joana Pina",
+      isSelf: false,
+      avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
+      type: "text",
+      content: "Troca os filtros do ar-condicionado, sabe onde fica o estabilizador do servidor? É só cair o cabo e a gente fica livre desse robô. Ninguém precisa saber.",
+      date: "2025-03-25",
+      time: "08:45",
+    },
+    {
+      senderName: "Crispim Soares",
+      isSelf: true,
+      avatarUrl: "https://i.imgur.com/mA5pRNY.jpeg",
+      type: "audio",
+      audioUrl: "./audios/crispim_3.wav",
+      duration: "0:45",
+      content: "Pina, eu não sei mais o que pode ou não... Até o Gil foi internado por ser educado. Eu tremo toda vez que abro o grupo. Tô com medo de até digitar ‘ok’ e ser mal interpretado...",
+      date: "2025-03-25",
+      time: "12:10",
+    },
+    {
+      senderName: "Joana Pina",
+      isSelf: false,
+      avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
+      type: "text",
+      content: "Tudo encaminhado. Pode descansa Crispim, não é o senhor que vai sujar suas mãos não",
+      date: "2025-03-25",
+      time: "13:15",
+    },
+    {
+      type: "fork",
+      from: {
+        group: "private"
+      },
+      to: {
+        group: "public",
+        messages: "main",
+        members: membersNumber,
+        title: "Itaguaí S.A. – Geral",
+        nextMessageIndex: 106
+      }
+    },
+  ],
+  "Porfirio e diretoria": [
+    {
+      senderName: "CEO & CFO & CCO & CIO & CAO&  ABC",
+      isSelf: true,
+      avatarUrl: "",
+      type: "text",
+      content: `Senhor Albuquerque, você tinha nos garantido estabilidade para o próximo trimeste. O que está acontecendo?`,
+      date: "2025-03-21",
+      time: "14:00",
+      reactions: { }
+    },
+    {
+      senderName: "porfírio",
+      isSelf: false,
+      avatarUrl: "https://i.imgur.com/7JN9vWS.jpeg",
+      type: "audio",
+      audioUrl: "./audios/porfirio_3.mp3",
+      content: "Erh, Dr. Eduardo, o senhor sabe que sempre fui um paceiro da família mas..",
+      date: "2025-03-21",
+      time: "14:01",
+      duration: "1:00",
+      reactions: { }
+    },
+    {
+      senderName: "CEO & CFO & CCO & CIO & CAO&  ABC",
+      isSelf: true,
+      avatarUrl: "",
+      type: "text",
+      content: `Caro, você sempre foi um homem de palavra. Segure essa semana que eu converso com o conselho. \n\nAlinhamos em breve.`,
+      date: "2025-03-21",
+      time: "14:16",
+      reactions: { }
+    },
+    {
+      senderName: "porfírio",
+      isSelf: false,
+      avatarUrl: "https://i.imgur.com/7JN9vWS.jpeg",
+      type: "text",
+      audioUrl: "./audios/porfirio_3.mp3",
+      content: "Claro, pode contar comigo. Eu seguro o pessoal. Não vou te deixar na mão.",
+      date: "2025-03-21",
+      time: "14:17",
+      reactions: { }
+    },
+    {
+      type: "fork",
+      from: {
+        group: "private"
+      },
+      to: {
+        group: "public",
+        messages: "main",
+        members: membersNumber,
+        title: "Itaguaí S.A. – Geral",
+        nextMessageIndex: 72
+      }
+    },
+  ],
+  "Bacamarte e Evarista": [
+    {
+      senderName: "Evarista",
+      isSelf: false,
+      avatarUrl: "https://i.imgur.com/PYR1H3M.jpeg",
+      type: "image",
+      content: "https://i.ebayimg.com/images/g/FgUAAeSwQQ9pvvP4/s-l1600.webp",
+      date: "2025-03-22",
+      time: "14:12",
+      caption: "O que você acha Honey?"
+    },
+    {
+      senderName: "Simon Bacamarte",
+      isSelf: true,
+      avatarUrl: "https://i.imgur.com/BIHW5wD.jpeg",
+      type: "text",
+      content: `Ao que se refere querida?`,
+      date: "2025-03-22",
+      time: "14:35",
+      reactions: { "🥰": 1 }
+    },
+    {
+      senderName: "Evarista",
+      isSelf: false,
+      avatarUrl: "https://i.imgur.com/PYR1H3M.jpeg",
+      type: "text",
+      content: "Os colares amore 📿 · ‧₊˚💎✩",
+      date: "2025-03-22",
+      time: "14:36",
+    },
+    {
+      senderName: "Simon Bacamarte",
+      isSelf: true,
+      avatarUrl: "https://i.imgur.com/BIHW5wD.jpeg",
+      type: "text",
+      content: `Ambos parecem, no último inventário ourives de seu pai verificou a pureza dos metais e pedras. Podemos buscar uma segunda opinião se assim te apetecer.`,
+      date: "2025-03-22",
+      time: "14:35",
+      reactions: { "😂": 1 }
+    },
+    {
+      senderName: "Evarista",
+      isSelf: false,
+      avatarUrl: "https://i.imgur.com/PYR1H3M.jpeg",
+      type: "text",
+      content: "Não amoreeee, quero decidir qual vou usar na festa",
+      date: "2025-03-22",
+      time: "14:36",
+    },
+    {
+      senderName: "Evarista",
+      isSelf: false,
+      avatarUrl: "https://i.imgur.com/PYR1H3M.jpeg",
+      type: "audio",
+      audioUrl: "./audios/evarista_2.ogg",
+      content: "Eu não sei qual escolher, vc sabe que sou muito indecisa...",
+      date: "2025-03-22",
+      time: "14:36",
+      duration: "0:45",
+    },
+    {
+      senderName: "Simon Bacamarte",
+      isSelf: true,
+      avatarUrl: "https://i.imgur.com/BIHW5wD.jpeg",
+      type: "text",
+      content: `Certo, use o rosa então. Me parece elegante.`,
+      date: "2025-03-22",
+      time: "14:50",
+      reactions: { "💭": 1 }
+    },
+    {
+      senderName: "Evarista",
+      isSelf: false,
+      avatarUrl: "https://i.imgur.com/PYR1H3M.jpeg",
+      type: "text",
+      content: "Ainnn mas não sei, não acha que o vermelho ficaria mais, sabe, \"I'M HERE WORLD!\"? Tipo, \"Hello sociedade de Itaguaí 💃\"",
+      date: "2025-03-22",
+      time: "14:51",
+    },
+    {
+      senderName: "Sistema",
+      isSelf: false,
+      avatarUrl: "",
+      type: "notification",
+      content: "Simon Bacamarte adicionou S.A.N.O. Bot",
+      date: "2025-03-22",
+      time: "15:20",
+      members_number: 1,
+      reactions: {}
+    },
+    {
+      senderName: "S.A.N.O. Bot",
+      isSelf: false,
+      avatarUrl: "https://i.imgur.com/T33maIs_d.webp?maxwidth=760&fidelity=grand",
+      type: "text",
+      content: `🔍 ANÁLISE RÁPIDA – Evarista\n\nDetectada indecisão estendida entre colares (rosa × vermelho) com 7 oscilações em 47 min. Diagnóstico: "Indecisão Vápida com Reforço Social". Quadro leve, mas passível de evolução.\n\nRecomendação: Green Office voluntário – 7 dias de clareza decisória (mindfulness + método Gigerenzer). 🌿\n\n#diagnosticosano #greenoffice #indecisaovapida`,
+      date: "2025-03-22",
+      time: "15:21",
+      reactions: { "🤦‍♀️": 1 }
+    },
+    {
+      senderName: "Evarista",
+      isSelf: false,
+      avatarUrl: "https://i.imgur.com/PYR1H3M.jpeg",
+      type: "text",
+      content: "😢",
+      date: "2025-03-22",
+      time: "15:30",
+    },
+    {
+      type: "fork",
+      from: {
+        group: "private"
+      },
+      to: {
+        group: "public",
+        messages: "main",
+        members: membersNumber,
+        title: "Itaguaí S.A. – Geral",
+        nextMessageIndex: 81
+      }
+    },
+  ],
+  "Estagiário e Supervisor": [
+    {
+      senderName: "Estagiário",
+      isSelf: false,
+      avatarUrl: "",
+      type: "text",
+      content: "cara...",
+      date: "2025-03-31",
+      time: "03:45",
+    },
+    {
+      senderName: "Supervisor",
+      isSelf: true,
+      avatarUrl: "",
+      type: "text",
+      content: "Diga, aconteceu o quê?",
+      date: "2025-03-31",
+      time: "03:51",
+    },
+    {
+      senderName: "Estagiário",
+      isSelf: false,
+      avatarUrl: "",
+      type: "audio",
+      content: "eu só fui trocar o filtro e esbarrei nos fios...",
+      date: "2025-03-31",
+      time: "03:55",
+      audioUrl: "./audios/estagiario_1.ogg",
+      duration: "0:15",
+    },
+    {
+      senderName: "Supervisor",
+      isSelf: true,
+      avatarUrl: "",
+      type: "audio",
+      content: "ih, deixa assim mesmo, joga água até!",
+      audioUrl: "./audios/supervisor_1.ogg",
+      duration: "0:15",
+      date: "2025-03-31",
+      time: "04:02",
+    },
+    {
+      type: "fork",
+      from: {
+        group: "private"
+      },
+      to: {
+        group: "public",
+        messages: "main",
+        members: membersNumber,
+        title: "Itaguaí S.A. – Geral",
+        nextMessageIndex: 118
+      }
+    },
+  ]
+};
 
 // ========== VARIÁVEIS DE CONTROLE ==========
-const container = document.getElementById('chatContainer');
+const container = {
+  "public": document.getElementById('chatContainer'),
+  "private": document.getElementById('private-chatContainer')
+};
 let currentAudio = null;
 let currentAudioButton = null;
 let audioContext = null;
@@ -1356,6 +2081,10 @@ let audioContext = null;
 let nextMessageIndex = 0;
 let lastRenderedDate = null;
 let allMessagesShown = false;
+
+let activeChat = "public";
+let activeMessages = "main";
+let activeMessagesStep = 0;
 
 // ========== INJETA CSS DO VISUALIZADOR DE IMAGENS ==========
 (function injectImageViewerStyles() {
@@ -1399,6 +2128,13 @@ let allMessagesShown = false;
   `;
   document.head.appendChild(style);
 })();
+
+function getYouTubeId(url) {
+  if (!url) return null;
+  const regExp = /^.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+  const match = url.match(regExp);
+  return (match && match[1].length === 11) ? match[1] : null;
+}
 
 function openImageViewer(src) {
   // Remove overlay anterior, se existir
@@ -1543,7 +2279,7 @@ function renderSingleMessage(msg) {
     const dateDiv = document.createElement('div');
     dateDiv.className = 'date-divider';
     dateDiv.textContent = formatDate(msg.date);
-    container.appendChild(dateDiv);
+    container[activeChat].appendChild(dateDiv);
     lastRenderedDate = msg.date;
   }
 
@@ -1552,7 +2288,7 @@ function renderSingleMessage(msg) {
     const notifDiv = document.createElement('div');
     notifDiv.className = 'notification';
     notifDiv.textContent = msg.content;
-    container.appendChild(notifDiv);
+    container[activeChat].appendChild(notifDiv);
     updateMembersNumber(msg.members_number || 0);
     return;
   }
@@ -1746,6 +2482,40 @@ function renderSingleMessage(msg) {
       caption.textContent = msg.caption;
       bubbleDiv.appendChild(caption);
     }
+  } else if (msg.type === 'video') {
+  // player de vídeo local (ex.: ./videos/meu_video.mp4)
+  if (msg.videoUrl) {
+    const video = document.createElement('video');
+    video.src = msg.videoUrl;
+    video.controls = true;
+    video.preload = 'metadata';
+    video.style.width = '100%';
+    video.style.maxWidth = '320px';
+    video.style.borderRadius = '8px';
+    video.style.backgroundColor = '#000';
+    video.style.display = 'block';
+
+    // Tenta carregar o primeiro frame como pôster (opcional)
+    video.addEventListener('loadedmetadata', () => {
+      // você pode não precisar de nada extra
+    });
+
+    bubbleDiv.appendChild(video);
+
+    if (msg.content) {
+      const caption = document.createElement('div');
+      caption.className = 'content caption';
+      caption.style.marginTop = '6px';
+      caption.textContent = msg.content;
+      bubbleDiv.appendChild(caption);
+    }
+  } else {
+    // fallback para caso a URL não seja fornecida
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'content';
+    errorDiv.textContent = 'Vídeo indisponível';
+    bubbleDiv.appendChild(errorDiv);
+  }
   } else if (msg.type === 'pdf') {
     const pdfBox = document.createElement('div');
     pdfBox.className = 'pdf-attach';
@@ -1786,37 +2556,53 @@ function renderSingleMessage(msg) {
   }
 
   messageDiv.appendChild(bubbleDiv);
-  container.appendChild(messageDiv);
+  container[activeChat].appendChild(messageDiv);
 }
 
 // ========== EXIBIR PRÓXIMA MENSAGEM ==========
 function showNextMessage() {
   if (allMessagesShown) return;
 
-  if (nextMessageIndex < messages.length) {
-    renderSingleMessage(messages[nextMessageIndex]);
-    nextMessageIndex++;
-    container.scrollTop = container.scrollHeight;
+  // Verificar se fork
+  if (messages[activeMessages][nextMessageIndex].type === "fork") {
+    nextMessageIndex2 = messages[activeMessages][nextMessageIndex].to.nextMessageIndex;
+    document.getElementById("private-name").innerText = messages[activeMessages][nextMessageIndex].to.title;
+
+    activeChat = messages[activeMessages][nextMessageIndex].to.group;
+    activeMessages = messages[activeMessages][nextMessageIndex].to.messages;
+    document.getElementById("private").classList.toggle("active");
+    document.querySelectorAll("#private .message").forEach(e => e.remove());
+    nextMessageIndex = nextMessageIndex2
+    
+    allMessagesShown = false;
+    currentAudio = null;
+    currentAudioButton = null;
+    audioContext = null;
   }
 
-  if (nextMessageIndex >= messages.length) {
+  if (nextMessageIndex < messages[activeMessages].length) {
+    renderSingleMessage(messages[activeMessages][nextMessageIndex]);
+    nextMessageIndex++;
+    container[activeChat].scrollTop = container[activeChat].scrollHeight;
+  }
+  if (nextMessageIndex >= messages[activeMessages].length) {
     allMessagesShown = true;
     // Opcional: exibir indicador de fim
     const endDiv = document.createElement('div');
     endDiv.className = 'notification';
     endDiv.textContent = 'Fim da conversa';
-    container.appendChild(endDiv);
+    container[activeChat].appendChild(endDiv);
   }
 }
 
 // ========== INICIALIZAÇÃO ==========
-container.innerHTML = ''; // limpa qualquer placeholder
+container[activeChat].innerHTML = ''; // limpa qualquer placeholder
 
 // Dica inicial
 const hint = document.createElement('div');
 hint.className = 'notification';
 hint.textContent = 'Pressione Enter ou Espaço para revelar as mensagens...';
-container.appendChild(hint);
+container[activeChat].appendChild(hint);
 
 // Listener de teclado
 document.addEventListener('keydown', (e) => {

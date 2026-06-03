@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="phone">
+  <div class="phone" id="public">
     <div class="header">
       <div class="back">←</div>
       <div class="avatar-group"></div>
@@ -17,6 +17,17 @@
       </div>
     </div>
     <div class="chat-container" id="chatContainer"></div>
+  </div>
+  <div class="phone private-group" id="private">
+    <div class="header">
+      <div class="back">←</div>
+      <div class="avatar-group"></div>
+      <div class="info">
+        <div class="name" id="private-name">Private text chat</div>
+        <div class="members"><span id="private-members-number">2</span> participantes</div>
+      </div>
+    </div>
+    <div class="chat-container" id="private-chatContainer"></div>
   </div>
   <script src="script.js" defer></script>
 </body>

@@ -23,7 +23,23 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  z-index: 100;
 }
+.phone.private-group {
+  transform: translateX(-15px);
+  position: absolute;
+  transition: 0.3s transform ease-in;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.phone.private-group.active {
+  transform: translateX(0px);
+  z-index: 110;
+  transition: 0.3s transform ease-in;
+  opacity: 1;
+}
+
 .header {
   background: #202c33;
   padding: 15px;
