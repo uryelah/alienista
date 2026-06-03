@@ -1801,7 +1801,7 @@ Lembre-se: perguntar já é o primeiro passo para o equilíbrio!
       isSelf: true,
       avatarUrl: "https://i.imgur.com/mA5pRNY.jpeg",
       type: "audio",
-      audioUrl: "./audios/crispim_333.wav",
+      audioUrl: "./audios/crispim_33.wav",
       duration: "0:45",
       content: "Pina, eu não sei mais o que pode ou não... Até o Gil foi internado por ser educado. Eu tremo toda vez que abro o grupo. Tô com medo de até digitar ‘ok’ e ser mal interpretado...",
       date: "2025-03-25",
