@@ -2742,3 +2742,24 @@ document.addEventListener('keydown', (e) => {
     showNextMessage();
   }
 });
+
+// ========== TOQUE NA TELA PARA AVANÇAR MENSAGENS (MOBILE + DESKTOP) ==========
+function isInteractiveElement(target) {
+  return target.closest('.read-more') ||
+         target.closest('.play-btn') ||
+         target.closest('.image-attach') ||
+         target.closest('.video-preview') ||
+         target.closest('.pdf-attach') ||
+         target.closest('.image-viewer-overlay') ||
+         target.closest('button');
+}
+
+function handleChatTap(e) {
+  // Ignora toques em elementos interativos (Ler mais, áudio, imagens, etc.)
+  if (isInteractiveElement(e.target)) return;
+  showNextMessage();
+}
+
+// Adiciona listener para toque (mobile) e clique (desktop) no painel principal
+document.addEventListener('touchstart', handleChatTap, { passive: true });
+document.addEventListener('click', handleChatTap);
