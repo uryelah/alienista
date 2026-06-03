@@ -2077,6 +2077,10 @@ let currentAudio = null;
 let currentAudioButton = null;
 let audioContext = null;
 
+const BACKGROUND_MUSIC_URL = "./audios/sano_theme.mp3"; // ← troque pelo caminho do seu arquivo de música
+let backgroundMusic = null;
+let bgMusicStarted = false;
+
 // Índice da próxima mensagem a ser exibida
 let nextMessageIndex = 0;
 let lastRenderedDate = null;
@@ -2085,6 +2089,43 @@ let allMessagesShown = false;
 let activeChat = "public";
 let activeMessages = "main";
 let activeMessagesStep = 0;
+
+function fadeAudio(audio, targetVolume, duration, callback) {
+  const steps = 30;
+  const interval = duration / steps;
+  const initialVolume = audio.volume;
+  const delta = (targetVolume - initialVolume) / steps;
+  let step = 0;
+  const timer = setInterval(() => {
+    step++;
+    audio.volume = Math.min(1, Math.max(0, initialVolume + delta * step));
+    if (step >= steps) {
+      clearInterval(timer);
+      if (callback) callback();
+    }
+  }, interval);
+}
+
+function startBackgroundMusic() {
+  if (bgMusicStarted) return;
+  bgMusicStarted = true;
+  backgroundMusic = new Audio(BACKGROUND_MUSIC_URL);
+  backgroundMusic.loop = true;
+  backgroundMusic.volume = 0;
+  backgroundMusic.play().then(() => {
+    fadeAudio(backgroundMusic, 0.25, 3000); // fade in para 50% em 3s
+  }).catch(e => console.log("Background music couldn't play:", e));
+}
+
+function stopBackgroundMusic() {
+  if (!backgroundMusic) return;
+  fadeAudio(backgroundMusic, 0, 3000, () => { // fade out em 3s
+    backgroundMusic.pause();
+    backgroundMusic.currentTime = 0;
+    backgroundMusic = null;
+    bgMusicStarted = false;
+  });
+}
 
 // ========== INJETA CSS DO VISUALIZADOR DE IMAGENS ==========
 (function injectImageViewerStyles() {
@@ -2274,6 +2315,15 @@ function formatDate(dateString) {
 
 // ========== RENDERIZAÇÃO DE UMA ÚNICA MENSAGEM ==========
 function renderSingleMessage(msg) {
+  // ===== GATILHO DA MÚSICA DE FUNDO =====
+  // Iniciar quando o S.A.N.O. 2.0 se torna administrador
+  if (msg.type === 'notification' && msg.content === "S.A.N.O. Bot 2.0 é agora o administrador do grupo") {
+    startBackgroundMusic();
+  }
+  // Finalizar quando o supervisor manda o áudio final
+  if (msg.senderName === "Supervisor" && msg.type === 'audio' && msg.content.includes("deixa assim mesmo")) {
+    stopBackgroundMusic();
+  }
   // Verifica se precisa adicionar divisor de data (exceto para notificações sem data)
   if (msg.date && msg.date !== lastRenderedDate) {
     const dateDiv = document.createElement('div');
