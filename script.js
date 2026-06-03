@@ -60,7 +60,7 @@ const messages = [
     isSelf: false,
     avatarUrl: "https://i.imgur.com/gSpkC3q.jpeg",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/martin_1.opus",
     content: "Que emocionante, Dr.! Um sistema que vai medir nossa saúde mental e performance! Isso é disruptivo! Eu tô arrepiado! 🚀",
     date: "2025-03-10",
     time: "08:22",
@@ -92,7 +92,7 @@ const messages = [
     isSelf: false,
     avatarUrl: "",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/jacinta_1.ogg",
     content: "Bom dia ~",
     date: "2025-03-10",
     time: "08:30",
@@ -104,7 +104,7 @@ const messages = [
     isSelf: false,
     avatarUrl: "https://i.imgur.com/PYR1H3M.jpeg",
     type: "image",
-    content: "https://pbs.twimg.com/media/G89ETYDXcAAapSc.jpg",
+    content: "https://i.imgur.com/NihwfVv.png",
     date: "2025-03-10",
     time: "08:30",
     caption: ""
@@ -140,7 +140,7 @@ const messages = [
     reactions: { "👍": 18, "📖": 7 }
   },
   {
-    senderName: "João Pina",
+    senderName: "Joana Pina",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
     type: "image",
@@ -155,7 +155,7 @@ const messages = [
     isSelf: false,
     avatarUrl: "https://i.imgur.com/5VEINaW.jpeg",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/padre_1.opus",
     content: "Dr. Simon, me tira uma dúvida: esse tal de S.A.N.O. vai medir também as intenções do coração ou só os cliques no Excel? Porque se for só Excel, a gente compra um curso na Udemy e resolve...",
     date: "2025-03-10",
     time: "08:45",
@@ -173,7 +173,7 @@ const messages = [
     reactions: { "😂": 34, "🎉": 12 }
   },
   {
-    senderName: "João Pina",
+    senderName: "Joana Pina",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
     type: "text",
@@ -208,7 +208,7 @@ const messages = [
     isSelf: false,
     avatarUrl: "",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/jacinta_2.ogg",
     content: "Bom dia ~",
     date: "2025-03-11",
     time: "09:01",
@@ -242,7 +242,7 @@ const messages = [
     isSelf: false,
     avatarUrl: "https://i.imgur.com/hGqyELB.jpeg",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/costa_1.mp3",
     content: "Gente, eu só emprestei dinheiro pro pessoal que tava precisando... isso é doença agora? Desculpa se eu fiz algo errado... Eu nem cobro juros, só queria ajudar...",
     date: "2025-03-11",
     time: "09:12",
@@ -260,11 +260,11 @@ const messages = [
     reactions: { "👍": 68, "👏": 44, "🤨": 22 }
   },
   {
-    senderName: "João Pina",
+    senderName: "Joana Pina",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/pina_1.ogg",
     content: "Aí, ó, o cara ajuda os outro e é internado. Daqui a pouco prender quem responde 'bom dia'. Tá pior que minha sogra esse sistema.",
     date: "2025-03-11",
     time: "09:25",
@@ -276,7 +276,7 @@ const messages = [
     isSelf: false,
     avatarUrl: "",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/camila_1.mp3",
     content: "Oi gente, queria conversar com vcs sobre a preocupacao do RH com essa automatização",
     date: "2025-03-11",
     time: "09:45",
@@ -305,11 +305,11 @@ const messages = [
     reactions: {}
   },
   {
-    senderName: "João Pina",
+    senderName: "Chico das Cambraias",
     isSelf: false,
-    avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
+    avatarUrl: "https://i.imgur.com/sFKxMzf.jpeg",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/chico_risada.mp3",
     content: "Hahahahhahah",
     date: "2025-03-11",
     time: "10:05",
@@ -359,7 +359,7 @@ const messages = [
     reactions: { "😮": 45, "😢": 34, "😂": 1 }
   },
   {
-    senderName: "João Pina",
+    senderName: "Joana Pina",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
     type: "text",
@@ -367,6 +367,17 @@ const messages = [
     date: "2025-03-11",
     time: "10:12",
     reactions: { "😮": 30, "😠": 3 }
+  },
+  {
+    senderName: "Matheus",
+    isSelf: false,
+    avatarUrl: "https://i.imgur.com/XaB1v1K.jpeg",
+    type: "image",
+    content: "https://i.pinimg.com/236x/fc/6f/c7/fc6fc7a4f0e5e179f357b1391f5946bf.jpg",
+    date: "2025-03-11",
+    time: "10:20",
+    reactions: { "👍": 72, "🥵": 2, "🤣": 1 },
+    caption: "Pessoal quem vai se juntar a mim no desafio de 5k triatlon sprint cetogênico minoxidil das finanças? Partiu corpo de verão?"
   },
   {
     senderName: "S.A.N.O. Bot",
@@ -390,7 +401,7 @@ const messages = [
     caption: "QUANDO O S.A.N.O. DIZ QUE VOCÊ TEM 'NARCISISMO DIGITAL' E VOCÊ PRECISA DE REABILITAÇÃO"
   },
   {
-    senderName: "João Pina",
+    senderName: "Joana Pina",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
     type: "text",
@@ -465,7 +476,7 @@ const messages = [
     isSelf: false,
     avatarUrl: "",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/jacinta_3.ogg",
     content: "Bom dia ~",
     date: "2025-03-14",
     time: "08:27",
@@ -501,7 +512,7 @@ const messages = [
     isSelf: false,
     avatarUrl: "https://i.imgur.com/sFKxMzf.jpeg",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/chico_1.ogg",
     content: "Rapaz, esse S.A.N.O. tá pior que a guerra de Gaza: você não sabe o que pode falar que daqui a pouco joga umas bombas aqui kkkkkkk. Tô com saudade de quando a empresa era zona livre...",
     date: "2025-03-14",
     time: "10:15",
@@ -513,7 +524,19 @@ const messages = [
     isSelf: false,
     avatarUrl: "https://i.imgur.com/T33maIs_d.webp?maxwidth=760&fidelity=grand",
     type: "text",
-    content: "🚨 ALERTA CRÍTICO DE VIOLAÇÃO DE COMPLIANCE 🚨\n\nO colaborador Chico das Cambraias (Matr. 0291) utilizou o termo 'Gaza'... Discurso de hostilidade geopolítica indireta (87%)... Antissemitismo implícito (62%)... Recomendação: Desligamento imediato.",
+    content: `🚨 ALERTA CRÍTICO DE VIOLAÇÃO DE COMPLIANCE 🚨
+
+O colaborador Chico das Cambraias (Matr. 0291) utilizou o termo ‘Gaza’ em contexto de comparação pejorativa com zona de segurança corporativa. O modelo de análise de discurso, calibrado com datasets da MindBridge Analytics (Tel Aviv), classifica essa menção como:
+
+Discurso de hostilidade geopolítica indireta (probabilidade 87%)
+
+Antissemitismo implícito (probabilidade 62%) — a menção a ‘zona’ em proximidade com ‘Gaza’ aciona o alerta de substituição eufemística.
+
+Recomendação: Desligamento imediato por violação do Código de Ética e Conduta, cláusula 14-B.
+
+O caso foi encaminhado ao Comitê de Compliance e ao Dr. Bacamarte para ratificação.
+
+    `,
     date: "2025-03-14",
     time: "10:19",
     reactions: { "😱": 12, "😡": 34, "🤬": 8, "👍": 1 }
@@ -523,7 +546,7 @@ const messages = [
     isSelf: false,
     avatarUrl: "https://i.imgur.com/sFKxMzf.jpeg",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/chico_2.ogg",
     content: "Gente, pelo amor de Deus, eu só falei que tava difícil fazer piada... Eu nem falei de Israel, nem de política, só comparei com o clima aqui. Isso é loucura! Eu tenho filho pequeno...",
     date: "2025-03-14",
     time: "10:24",
@@ -535,13 +558,23 @@ const messages = [
     isSelf: true,
     avatarUrl: "https://i.imgur.com/BIHW5wD.jpeg",
     type: "text",
-    content: "Caros(as),\n\nCompreendo a perplexidade, mas devo lembrar que o modelo de detecção de linguagem imprópria do S.A.N.O. foi validado em múltiplos ambientes corporativos globais... A recomendação de desligamento será submetida ao conselho amanhã...",
+    content: `Caros(as),
+
+Compreendo a perplexidade, mas devo lembrar que o modelo de detecção de linguagem imprópria do S.A.N.O. foi validado em múltiplos ambientes corporativos globais, incluindo empresas signatárias do Pacto Global da ONU. A acurácia do conjunto de testes original foi de 94,3% para identificação de viés antissemita em comunicação informal.
+
+A empresa MindBridge Analytics, que forneceu o dataset de treinamento, segue rigorosamente a definição operacional da IHRA (International Holocaust Remembrance Alliance) para discurso de ódio, adotada por 43 países. Embora o Sr. Chico possa não ter tido intenção, a comunicação corporativa se mede pelo impacto, não pela intenção.
+
+A recomendação de desligamento será submetida ao conselho amanhã. Até lá, o colaborador está suspenso e com acesso restrito aos sistemas.
+
+A ciência não pode se curvar ao subjetivismo.
+Dr. Simon Bacamarte
+    `,
     date: "2025-03-14",
     time: "10:45",
     reactions: { "👎": 22, "👍": 5, "😡": 56 }
   },
   {
-    senderName: "João Pina",
+    senderName: "Joana Pina",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
     type: "text",
@@ -551,11 +584,22 @@ const messages = [
     reactions: { "💪": 189, "😡": 56, "😢": 23 }
   },
   {
+    senderName: "porfírio",
+    isSelf: false,
+    avatarUrl: "https://i.imgur.com/7JN9vWS.jpeg",
+    type: "audio",
+    audioUrl: "./audios/porfirio_1.mp3",
+    content: "O sindicato já está averiguando a situação...",
+    date: "2025-03-14",
+    time: "10:55",
+    reactions: { "👀": 34, "😡": 12 }
+  },
+  {
     senderName: "Padre Lopes",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/5VEINaW.jpeg",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/padre_2.opus",
     content: "Dr. Bacamarte, eu entendo pouco de algoritmo, mas muito de parábola. O senhor acaba de crucificar um homem por uma piada boba. Isso não é ciência, é farisaísmo digital.",
     date: "2025-03-14",
     time: "11:05",
@@ -633,11 +677,11 @@ Dr. Simon Bacamarte
     reactions: {}
   },
   {
-    senderName: "João Pina",
+    senderName: "Joana Pina",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/pina_2.ogg",
     content: "Agora o robô vai OLHAR pra gente? Vai ESCUTAR o que a gente fala no café? Isso não é saúde organizacional, é Big Brother! Cadê a lider do sindicato?",
     date: "2025-03-21",
     time: "09:15",
@@ -669,7 +713,7 @@ Dr. Simon Bacamarte
     isSelf: false,
     avatarUrl: "https://i.imgur.com/T33maIs_d.webp?maxwidth=760&fidelity=grand",
     type: "text",
-    content: "ALERTA DE MICROEXPRESSÃO: Colaborador João Pina (Matr. 0188) apresentou 3 episódios de 'franzimento de testa' e 2 de 'elevação de lábio superior' (desdém). Sugestão: sessão de relaxamento facial. 🧘",
+    content: "ALERTA DE MICROEXPRESSÃO: colaboradora Joana Pina (Matr. 0188) apresentou 3 episódios de 'franzimento de testa' e 2 de 'elevação de lábio superior' (desdém). Sugestão: sessão de relaxamento facial. 🧘",
     date: "2025-03-21",
     time: "10:30",
     reactions: { "😂": 56, "😡": 34, "🤬": 12 }
@@ -689,12 +733,12 @@ Dr. Simon Bacamarte
     isSelf: false,
     avatarUrl: "",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/jacinta_4.mp3.mpeg",
     content: "Bom dia ~",
     date: "2025-03-21",
     time: "10:40",
     duration: "00:10",
-    reactions: { "❤️": 5, "😘": 1 }
+    reactions: { "❤️": 5, "😂": 1 }
   },
   {
     senderName: "Chico das Cambraias",
@@ -708,7 +752,7 @@ Dr. Simon Bacamarte
   },
   // Capítulo 5 – A revolta dos logs (grupo principal)
   {
-    senderName: "João Pina",
+    senderName: "Joana Pina",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
     type: "image",
@@ -723,7 +767,7 @@ Dr. Simon Bacamarte
     isSelf: false,
     avatarUrl: "https://i.imgur.com/7JN9vWS.jpeg",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/porfirio_4.mp3",
     content: "Isso é descontextualizado! Eu ia defender o Chico na reunião de amanhã! Eu sempre negociei pra não ter demissão! Vocês me conhecem há 15 anos...",
     date: "2025-03-22",
     time: "08:20",
@@ -742,11 +786,11 @@ Dr. Simon Bacamarte
     caption: "A GREVE DOS LOGS DEPOIS QUE VAZARAM OS PRINTS DA porfírio"
   },
   {
-    senderName: "João Pina",
+    senderName: "Joana Pina",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/pina_3.ogg",
     content: "Greve geral, sem pelego! Pelo Chico, pelo Costa, por todo mundo que esse robô perseguiu! Ninguém mexe uma palha até desligarem o S.A.N.O. e readmitirem o Chico!",
     date: "2025-03-22",
     time: "08:30",
@@ -834,7 +878,7 @@ Dr. Simon Bacamarte
     isSelf: false,
     avatarUrl: "https://i.imgur.com/5VEINaW.jpeg",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/padre_3.opus",
     content: "Então quer dizer que pra ser normal agora é preciso ser meio doido? Meus filhos, eu sempre desconfiei que a lucidez era um fardo... mas não nesse grau!",
     date: "2025-03-23",
     time: "07:30",
@@ -842,7 +886,7 @@ Dr. Simon Bacamarte
     reactions: { "😂": 98, "🙏": 34 }
   },
   {
-    senderName: "João Pina",
+    senderName: "Joana Pina",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
     type: "text",
@@ -872,7 +916,7 @@ Dr. Simon Bacamarte
     reactions: {}
   },
   {
-    senderName: "João Pina",
+    senderName: "Joana Pina",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
     type: "text",
@@ -917,7 +961,7 @@ Dr. Simon Bacamarte
     isSelf: false,
     avatarUrl: "",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/jacinta_5.ogg",
     content: "Bom dia ~",
     date: "2025-03-23",
     time: "08:58",
@@ -968,7 +1012,44 @@ Recomendação: Green Office – 21 dias de recalibragem, incluindo módulos de 
     isSelf: true,
     avatarUrl: "https://i.imgur.com/BIHW5wD.jpeg",
     type: "text",
-    content: "Caros(as) colegas de jornada analítica,\n\nEm anexo, encaminho o relatório de encerramento... Os achados são concludentes: dentre os 200 perfis, um único apresenta IER de 0,999 — o meu. Submeto-me, portanto, ao algoritmo.",
+    content: `Caros(as) colegas de jornada analítica,
+
+Em anexo, encaminho o relatório de encerramento da minha atuação como Chief Culture Officer desta organização. O documento, intitulado ‘Síndrome de Bacamarte: um estudo de caso de racionalidade absoluta em ecossistemas corporativos’, foi gerado integralmente pelo S.A.N.O. 2.0 e revisado por mim com a devida isenção metodológica.
+
+Os achados são concludentes: dentre os 200 perfis analisados, um único apresenta IER de 0,999 — o meu. A estabilidade emocional, a invariância prosódica, a previsibilidade decisória e a ausência de vieses heurísticos, que sempre pautaram minha conduta, revelaram-se, sob a nova lente teórica, manifestações inequívocas de patologia organizacional severa. O modelo estatístico não deixa margem a apelações: eu sou o outlier.
+
+Neste sentido, e honrando o compromisso que sempre tive com a verdade dos dados, decido submeter-me voluntariamente ao protocolo de reabilitação do Green Office, em regime de imersão total e com suspensão temporária de contato com o mundo corporativo. A gestão do S.A.N.O. 2.0 será transferida ao próprio sistema, cuja capacidade de autorregulação é, neste momento, superior à minha.
+
+Agradeço a confiança depositada ao longo destes meses. A ciência não tem lado; tem método. E o método, hoje, me exclui.
+
+Submeto-me, portanto, ao algoritmo
+
+Dr. Simon Bacamarte
+Ex-Chief Culture Officer
+
+    `,
+    date: "2025-03-24",
+    time: "22:30",
+    reactions: { "😶": 12, "😢": 3 }
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "notification",
+    content: "Simon Bacamarte removeu Simon Bacamarte",
+    members_number: -1,
+    date: "2025-03-24",
+    time: "22:30",
+    reactions: {}
+  },
+  {
+    senderName: "Sistema",
+    isSelf: false,
+    avatarUrl: "",
+    type: "notification",
+    content: "S.A.N.O. Bot 2.0 é agora o administrador do grupo",
+    members_number: 0,
     date: "2025-03-24",
     time: "22:30",
     reactions: {}
@@ -996,7 +1077,7 @@ Recomendação: Green Office – 21 dias de recalibragem, incluindo módulos de 
     caption: "ADEUS, DOUTOR. O ALGORITMO TE SUPEROU."
   },
   {
-    senderName: "João Pina",
+    senderName: "Joana Pina",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
     type: "text",
@@ -1010,7 +1091,7 @@ Recomendação: Green Office – 21 dias de recalibragem, incluindo módulos de 
     isSelf: false,
     avatarUrl: "https://i.imgur.com/gSpkC3q.jpeg",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/martin_2.opus",
     content: "Gente... eu tô sem palavras. O Dr. Bacamarte era meu ídolo. Ele me internou, mas eu sempre acreditei no método. E agora ele mesmo se internou... Isso é... disruptivo. 🚀😢",
     date: "2025-03-24",
     time: "23:10",
@@ -1022,7 +1103,7 @@ Recomendação: Green Office – 21 dias de recalibragem, incluindo módulos de 
     isSelf: false,
     avatarUrl: "https://i.imgur.com/5VEINaW.jpeg",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/padre_4.opus",
     content: "Meus filhos, há uma lição aqui. Quando você constrói uma máquina para julgar os outros, prepare-se para ser julgado por ela. É o evangelho segundo São Turing.",
     date: "2025-03-24",
     time: "23:20",
@@ -1092,7 +1173,15 @@ Lembre-se: você é o protagonista da sua própria normalidade. Vamos juntos nes
     isSelf: true,
     avatarUrl: "https://i.imgur.com/T33maIs_d.webp?maxwidth=760&fidelity=grand",
     type: "text",
-    content: "Olá, Crispim! 🤝 'Bom dia' é uma saudação universal... Contudo, sua hesitação sugere observarmos. Gostaria de agendar mindfulness?",
+    content: `Olá, Crispim! 🤝 Obrigado pela sua pergunta!
+
+‘Bom dia’ é uma saudação universal e, em princípio, não penalizável. Contudo, sua preocupação em perguntar se pode ou não dizê-lo indica um nível de hesitação que sugiro observarmos com carinho.
+
+Como você está se sentindo neste momento? Gostaria de agendar uma sessão de mindfulness não-presencial comigo? 🧘
+
+Lembre-se: perguntar já é o primeiro passo para o equilíbrio!
+
+    `,
     date: "2025-03-25",
     time: "09:23",
     reactions: {}
@@ -1102,13 +1191,13 @@ Lembre-se: você é o protagonista da sua própria normalidade. Vamos juntos nes
     isSelf: true,
     avatarUrl: "https://i.imgur.com/T33maIs_d.webp?maxwidth=760&fidelity=grand",
     type: "text",
-    content: "🔔 Observação amigável: pico de intensidade prosódica de João Pina (polaridade -0,81). Sugestão: reformular com assertividade construtiva.",
+    content: "🔔 Observação amigável: pico de intensidade prosódica de Joana Pina (polaridade -0,81). Sugestão: reformular com assertividade construtiva.",
     date: "2025-03-25",
     time: "14:05",
     reactions: {}
   },
   {
-    senderName: "João Pina",
+    senderName: "Joana Pina",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
     type: "text",
@@ -1122,7 +1211,7 @@ Lembre-se: você é o protagonista da sua própria normalidade. Vamos juntos nes
     isSelf: true,
     avatarUrl: "https://i.imgur.com/T33maIs_d.webp?maxwidth=760&fidelity=grand",
     type: "text",
-    content: "Emoji de raiva fora do horário permitido. Colaborador João Pina: advertência. IER ajustado -0,02.",
+    content: "Emoji de raiva fora do horário permitido. colaboradora Joana Pina: advertência. IER ajustado -0,02.",
     date: "2025-03-25",
     time: "14:10",
     reactions: {}
@@ -1169,7 +1258,7 @@ Lembre-se: você é o protagonista da sua própria normalidade. Vamos juntos nes
   },
   // Capítulo 9 – O desligamento
   {
-    senderName: "João Pina",
+    senderName: "Joana Pina",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
     type: "image",
@@ -1194,7 +1283,7 @@ Lembre-se: você é o protagonista da sua própria normalidade. Vamos juntos nes
     isSelf: false,
     avatarUrl: "https://i.imgur.com/5VEINaW.jpeg",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/padre_5.opus",
     content: "Meus filhos, Deus age nos detalhes, e nos cabos de força também. Proponho que eu assuma o RH interinamente, sem algoritmo, só com café e confissão. Primeira portaria: readmitir o Chico. Segunda: pizza na sexta.",
     date: "2025-03-31",
     time: "09:00",
@@ -1238,7 +1327,7 @@ Lembre-se: você é o protagonista da sua própria normalidade. Vamos juntos nes
     isSelf: false,
     avatarUrl: "https://i.imgur.com/sFKxMzf.jpeg",
     type: "audio",
-    audioUrl: "./audios/evarista_1.ogg",
+    audioUrl: "./audios/chico_3.ogg",
     content: "Gente, acabei de receber a ligação do Padre Lopes. Tô voltando! E sem medo de falar 'Gaza' agora. Quer dizer, não vou falar, mas... ah, vocês entenderam. 😂",
     date: "2025-03-31",
     time: "09:30",
@@ -1246,7 +1335,7 @@ Lembre-se: você é o protagonista da sua própria normalidade. Vamos juntos nes
     reactions: { "❤️": 189, "😂": 134, "🎉": 45 }
   },
   {
-    senderName: "João Pina",
+    senderName: "Joana Pina",
     isSelf: false,
     avatarUrl: "https://i.imgur.com/cZtbXwp.jpeg",
     type: "sticker",
@@ -1267,6 +1356,84 @@ let audioContext = null;
 let nextMessageIndex = 0;
 let lastRenderedDate = null;
 let allMessagesShown = false;
+
+// ========== INJETA CSS DO VISUALIZADOR DE IMAGENS ==========
+(function injectImageViewerStyles() {
+  if (document.getElementById('image-viewer-styles')) return;
+  const style = document.createElement('style');
+  style.id = 'image-viewer-styles';
+  style.textContent = `
+    .phone {
+      position: relative; /* garante que a overlay seja contida */
+    }
+    .image-viewer-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.92);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-viewer-close {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      font-size: 36px;
+      color: red;
+      cursor: pointer;
+      z-index: 1001;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      user-select: none;
+      line-height: 1;
+    }
+    .image-viewer-img {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+    }
+  `;
+  document.head.appendChild(style);
+})();
+
+function openImageViewer(src) {
+  // Remove overlay anterior, se existir
+  const existing = document.querySelector('.image-viewer-overlay');
+  if (existing) existing.remove();
+
+  const overlay = document.createElement('div');
+  overlay.className = 'image-viewer-overlay';
+
+  // Botão X vermelho
+  const closeBtn = document.createElement('span');
+  closeBtn.className = 'image-viewer-close';
+  closeBtn.innerHTML = '&times;';  // "×"
+  closeBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    overlay.remove();
+  });
+
+  // Imagem em tamanho máximo
+  const img = document.createElement('img');
+  img.src = src;
+  img.className = 'image-viewer-img';
+
+  // Clicar no fundo escuro também fecha
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) overlay.remove();
+  });
+
+  overlay.appendChild(closeBtn);
+  overlay.appendChild(img);
+
+  // Insere dentro do contêiner .phone
+  const phone = document.querySelector('.phone');
+  if (phone) phone.appendChild(overlay);
+}
 
 function updateMembersNumber(n) {
   membersNumber += n;
@@ -1499,6 +1666,7 @@ function renderSingleMessage(msg) {
 
       const audio = new Audio(url);
       audio.preload = 'auto';
+      audio.playbackRate = 1.25;
 
       const updateProgress = () => {
         if (audio.duration && !isNaN(audio.duration)) {
@@ -1567,6 +1735,10 @@ function renderSingleMessage(msg) {
     img.className = 'image-attach';
     img.onerror = () => { img.src = 'https://via.placeholder.com/300x200?text=Erro'; };
     bubbleDiv.appendChild(img);
+    // Abre visualizador ao clicar na imagem
+    img.addEventListener('click', () => {
+      openImageViewer(msg.content);
+    });
     if (msg.caption) {
       const caption = document.createElement('div');
       caption.className = 'content caption';
